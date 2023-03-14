@@ -1,0 +1,484 @@
+#include<stdio.h>
+#include<windows.h>
+void gotoxy(int x, int y)
+{
+    COORD c = { x, y };
+    SetConsoleCursorPosition(  GetStdHandle(STD_OUTPUT_HANDLE) , c);
+}
+
+int main(){
+char ch = 128516;
+char ch1 ;
+int i  , n , time = 80000 , a , b , c , d ;
+int x1 = 10 , y1 = 7 ;
+///letter A
+for(i=0 ; i<9 ; i++){
+    gotoxy(17+i , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(16-i , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(13+i , 11);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+///letter B
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(29 , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<6 ; i++){
+    gotoxy(29+i , y1);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<2 ; i++){
+    gotoxy(35+i , 8+i);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(35-i , 10+i);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(30 , 11);
+    printf("%c%c%c%c\n" ,ch , ch, ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+//------
+for(i=0 ; i<2 ; i++){
+    gotoxy(35+i , 12+i);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(35-i , 14+i);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(29 , 15);
+    printf("%c%c%c%c%c\n" , ch ,ch,ch,ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+
+
+
+///letter D
+
+for(i=0 ; i<9 ; i++){
+    gotoxy(40 , 7+i);
+    printf("%c"  , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<6 ; i++){
+    gotoxy(40+i , 7);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<3 ; i++){
+    gotoxy(46+i , 8+i);
+    printf("%c%c\n" , ch , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(48 , 11+i);
+    printf("%c%c\n" , ch , ch); fflush(stdout);
+
+    usleep(time);
+}
+///-----------------
+for(i=0 ; i<2 ; i++){
+    gotoxy(47-i , 13+i);
+    printf("%c%c" , ch , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(40 , 15);
+    printf("%c%c%c%c%c%c" , ch , ch , ch , ch ,ch , ch); fflush(stdout);
+
+    usleep(time);
+}
+///letter U
+for(i=0 ; i<7 ; i++){
+    gotoxy(52 , 7+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(53+i , 14+i);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(55 , 15);
+    printf("%c%c%c%c%c%c\n" , ch , ch , ch ,ch ,ch, ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(61 , 14);
+    printf("%c%c\n" , ch , ch);fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<7 ; i++){
+    gotoxy(63 , 7+i);
+    printf("%c"  , ch); fflush(stdout);
+
+    usleep(time);
+}
+//letter L
+for(i=0 ; i<8; i++){
+    gotoxy(66 , 7+i);
+    printf("%c"  , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<8; i++){
+    gotoxy(66+i , 15);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+//letter L
+for(i=0 ; i<8; i++){
+    gotoxy(76 , 7+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<8; i++){
+    gotoxy(76+i , 15);
+    printf("%c"  ,ch); fflush(stdout);
+
+    usleep(time);
+}
+///letter A
+
+for(i=0 ; i<9 ; i++){
+    gotoxy(95+i , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(94-i , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(91+i , 11);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+
+///letter H
+for(i=0 ; i<9 ; i++){
+    gotoxy(106 , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(116 , y1+i);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(107+i , 11);
+    printf("%c" , ch); fflush(stdout);
+
+    usleep(time);
+}
+///============
+
+for(i=0 ; i<45 ; i++){
+    gotoxy(107-i , 25);
+    printf("***");
+    printf("  "); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<45 ; i++){
+    gotoxy(62 , 25);
+    printf("***");
+    printf("  "); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(62 , 25);
+    printf("WATCH THIS"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<4 ; i++){
+    gotoxy(65 , 23-i);
+    printf("||"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<3 ; i++){
+    gotoxy(66+i , 19+i);
+    printf("\\"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<3 ; i++){
+    gotoxy(65-i , 19+i);
+    printf("/"); fflush(stdout);
+
+    usleep(time);
+}
+///----------------------name again-------------------------------------------------------------------------------------------------
+
+///letter A
+for(i=0 ; i<9 ; i++){
+    gotoxy(17+i , y1+i);
+    printf("*"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(16-i , y1+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(13+i , 11);
+    printf("*"); fflush(stdout);
+
+    usleep(time);
+}
+///letter B
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(29 , y1+i);
+    printf("*" , ch); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<6 ; i++){
+    gotoxy(29+i , y1);
+    printf("*"); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<2 ; i++){
+    gotoxy(35+i , 8+i);
+    printf("**\n");fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(35-i , 10+i);
+    printf("**\n");fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(30 , 11);
+    printf("****\n");fflush(stdout);
+
+    usleep(time);
+}
+//------
+for(i=0 ; i<2 ; i++){
+    gotoxy(35+i , 12+i);
+    printf("**\n");fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(35-i , 14+i);
+    printf("**\n" );fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(29 , 15);
+    printf("*****\n");fflush(stdout);
+
+    usleep(time);
+}
+
+
+
+///letter D
+
+for(i=0 ; i<9 ; i++){
+    gotoxy(40 , 7+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<6 ; i++){
+    gotoxy(40+i , 7);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<3 ; i++){
+    gotoxy(46+i , 8+i);
+    printf("**\n" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(48 , 11+i);
+    printf("**\n" ); fflush(stdout);
+
+    usleep(time);
+}
+///-----------------
+for(i=0 ; i<2 ; i++){
+    gotoxy(47-i , 13+i);
+    printf("**" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<2 ; i++){
+    gotoxy(40 , 15);
+    printf("******"); fflush(stdout);
+
+    usleep(time);
+}
+///letter U
+for(i=0 ; i<7 ; i++){
+    gotoxy(52 , 7+i);
+    printf("*"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(53+i , 14+i);
+    printf("**\n" );fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(55 , 15);
+    printf("******\n");fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<1 ; i++){
+    gotoxy(61 , 14);
+    printf("**\n");fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<7 ; i++){
+    gotoxy(63 , 7+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+//letter L
+for(i=0 ; i<8; i++){
+    gotoxy(66 , 7+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<8; i++){
+    gotoxy(66+i , 15);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+//letter L
+for(i=0 ; i<8; i++){
+    gotoxy(76 , 7+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<8; i++){
+    gotoxy(76+i , 15);
+    printf("*"  ); fflush(stdout);
+
+    usleep(time);
+}
+///letter A
+
+for(i=0 ; i<9 ; i++){
+    gotoxy(95+i , y1+i);
+    printf("*"); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(94-i , y1+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+
+for(i=0 ; i<8 ; i++){
+    gotoxy(91+i , 11);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+
+///letter H
+for(i=0 ; i<9 ; i++){
+    gotoxy(106 , y1+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(116 , y1+i);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+for(i=0 ; i<9 ; i++){
+    gotoxy(107+i , 11);
+    printf("*" ); fflush(stdout);
+
+    usleep(time);
+}
+
+getchar();
+
+return 0;
+}
