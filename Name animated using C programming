@@ -7,10 +7,11 @@ void gotoxy(int x, int y)
 }
 
 int main(){
-char ch = 128516;
+char ch = 128516 , A;
 char ch1 ;
 int i  , j , n , time = 17000 , a , b , c , d ;
 int x1 = 10 , y1 = 7 ;
+scanf("%c" , &A);
 ///letter A
 for(i=0 ; i<9 ; i++){
     gotoxy(17+i , y1+i);
