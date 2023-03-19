@@ -9,7 +9,7 @@ void gotoxy(int x, int y)
 int main(){
 char ch = 128516;
 char ch1 ;
-int i  , j , n , time = 80000 , a , b , c , d ;
+int i  , j , n , time = 17000 , a , b , c , d ;
 int x1 = 10 , y1 = 7 ;
 ///letter A
 for(i=0 ; i<9 ; i++){
@@ -237,7 +237,7 @@ for(i=0 ; i<45 ; i++){
     printf("***");
     printf("  "); fflush(stdout);
 
-    usleep(time);
+    usleep(100);
 }
 for(i=0 ; i<1 ; i++){
     gotoxy(62 , 25);
@@ -493,7 +493,8 @@ gotoxy(50 , 6);
     printf("       ****************         \n" );usleep(time);gotoxy(50 , 18);
     printf("          **********         \n" );usleep(time);
 
-
+gotoxy(55 , 21);
+    printf("MEJIC *_*\n" );
 getchar();
 
 return 0;
